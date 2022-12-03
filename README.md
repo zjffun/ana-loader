@@ -5,13 +5,13 @@
 </div>
 
 [![npm][npm]][npm-url]
-[![node][node]][node-url]
-[![deps][deps]][deps-url]
 [![cover][cover]][cover-url]
 [![chat][chat]][chat-url]
 [![size][size]][size-url]
 
 # dep-loader
+
+A webpack loader for analyzing dependencies. Support TypeScript, JSX, Vue, AMD, CJS, ESM, CSS, Sass, Scss, Less and Stylus.
 
 ## Getting Started
 
