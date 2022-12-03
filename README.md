@@ -201,10 +201,10 @@ compiler.run((error, stats) => {
 [npm-url]: https://npmjs.com/package/dep-loader
 [node]: https://img.shields.io/node/v/dep-loader.svg
 [node-url]: https://nodejs.org
-[deps]: https://david-dm.org/webpack-contrib/dep-loader.svg
-[deps-url]: https://david-dm.org/webpack-contrib/dep-loader
-[cover]: https://codecov.io/gh/webpack-contrib/dep-loader/branch/master/graph/badge.svg
-[cover-url]: https://codecov.io/gh/webpack-contrib/dep-loader
+[deps]: https://david-dm.org/zjffun/dep-loader.svg
+[deps-url]: https://david-dm.org/zjffun/dep-loader
+[cover]: https://codecov.io/gh/zjffun/dep-loader/branch/master/graph/badge.svg
+[cover-url]: https://codecov.io/gh/zjffun/dep-loader
 [chat]: https://img.shields.io/badge/gitter-webpack%2Fwebpack-brightgreen.svg
 [chat-url]: https://gitter.im/webpack/webpack
 [size]: https://packagephobia.now.sh/badge?p=dep-loader
