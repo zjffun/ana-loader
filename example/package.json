@@ -7,8 +7,8 @@
   "scripts": {
     "start": "node ./compile.js"
   },
-  "dependencies": {
-    "ana-loader": "../",
+  "devDependencies": {
+    "ana-loader": "^0.1.0",
     "webpack": "^5.75.0"
   }
 }
