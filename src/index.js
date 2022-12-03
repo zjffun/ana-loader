@@ -15,7 +15,7 @@ export default function loader(source) {
 
   const options = this.getOptions(schema) || {};
 
-  if (options.excludes !== undefined) {
+  if (Array.isArray(options.excludes)) {
     excludes = options.excludes.map((exclude) => {
       if (exclude instanceof RegExp) {
         return exclude;

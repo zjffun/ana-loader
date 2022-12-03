@@ -23,7 +23,7 @@
     "commitlint": "commitlint --from=master",
     "security": "npm audit",
     "lint:prettier": "prettier \"{**/*,*}.{js,json,md,yml,css,ts}\" --list-different",
-    "lint:js": "eslint --cache .",
+    "lint:js": "eslint \"src/**/*.js\" --cache .",
     "lint": "npm-run-all -l -p \"lint:**\"",
     "test:only": "cross-env NODE_ENV=test jest",
     "test:watch": "npm run test:only -- --watch",
