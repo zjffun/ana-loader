@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`validate options should throw an error on the "excludes" option with "/test/" value 1`] = `
+"Invalid options object. Dep Loader has been initialized using an options object that does not match the API schema.
+ - options.excludes should be an array:
+   [any, ...]
+   -> Exclude finding dependencies in these conditions."
+`;
+
+exports[`validate options should throw an error on the "excludes" option with "{"foo":"bar"}" value 1`] = `
+"Invalid options object. Dep Loader has been initialized using an options object that does not match the API schema.
+ - options.excludes has an unknown property 'foo'. These properties are valid:
+   [any, ...]
+   -> Exclude finding dependencies in these conditions."
+`;
+
+exports[`validate options should throw an error on the "excludes" option with "{}" value 1`] = `
+"Invalid options object. Dep Loader has been initialized using an options object that does not match the API schema.
+ - options.excludes should be an array:
+   [any, ...]
+   -> Exclude finding dependencies in these conditions."
+`;
+
+exports[`validate options should throw an error on the "excludes" option with "1" value 1`] = `
+"Invalid options object. Dep Loader has been initialized using an options object that does not match the API schema.
+ - options.excludes should be an array:
+   [any, ...]
+   -> Exclude finding dependencies in these conditions."
+`;
+
+exports[`validate options should throw an error on the "excludes" option with "false" value 1`] = `
+"Invalid options object. Dep Loader has been initialized using an options object that does not match the API schema.
+ - options.excludes should be an array:
+   [any, ...]
+   -> Exclude finding dependencies in these conditions."
+`;
+
+exports[`validate options should throw an error on the "excludes" option with "test" value 1`] = `
+"Invalid options object. Dep Loader has been initialized using an options object that does not match the API schema.
+ - options.excludes should be an array:
+   [any, ...]
+   -> Exclude finding dependencies in these conditions."
+`;
+
+exports[`validate options should throw an error on the "excludes" option with "true" value 1`] = `
+"Invalid options object. Dep Loader has been initialized using an options object that does not match the API schema.
+ - options.excludes should be an array:
+   [any, ...]
+   -> Exclude finding dependencies in these conditions."
+`;

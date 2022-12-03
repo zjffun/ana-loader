@@ -1,0 +1,12 @@
+{
+  "title": "Dep Loader options",
+  "type": "object",
+  "properties": {
+    "excludes": {
+      "description": "Exclude finding dependencies in these conditions.",
+      "type": "array",
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

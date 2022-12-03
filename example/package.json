@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "name": "example",
+  "version": "1.0.0",
+  "author": "Jufeng Zhang",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./compile.js"
+  },
+  "dependencies": {
+    "dep-loader": "../",
+    "webpack": "^5.75.0"
+  }
+}

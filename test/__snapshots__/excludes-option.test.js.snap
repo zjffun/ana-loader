@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`"excludes" option should work with string array: result 1`] = `
+[
+  {
+    "id": "./simple.js",
+    "reasons": [
+      null,
+    ],
+  },
+  {
+    "id": "./foo.js",
+    "reasons": [
+      "./simple.js",
+    ],
+  },
+  {
+    "id": "./foo.css",
+    "reasons": [
+      "./simple.js",
+    ],
+  },
+  {
+    "id": "./foo.ts",
+    "reasons": [
+      "./simple.js",
+    ],
+  },
+  {
+    "id": "./foo.vue",
+    "reasons": [
+      "./simple.js",
+    ],
+  },
+  {
+    "id": "./foo.tsx",
+    "reasons": [
+      "./simple.js",
+    ],
+  },
+  {
+    "id": "./node_modules/test.js",
+    "reasons": [
+      "./foo.js",
+      "./foo.ts",
+      "./foo.vue",
+    ],
+  },
+  {
+    "id": "./fooDep.js",
+    "reasons": [
+      "./foo.js",
+      "./foo.ts",
+      "./foo.vue",
+    ],
+  },
+  {
+    "id": "./assets/foo.png",
+    "reasons": [
+      "./foo.css",
+      "./foo.vue",
+    ],
+  },
+  {
+    "id": "./node_modules/testDep.js",
+    "reasons": [
+      "./node_modules/test.js",
+    ],
+  },
+  {
+    "id": "",
+    "reasons": [],
+  },
+  {
+    "id": "",
+    "reasons": [],
+  },
+  {
+    "id": "",
+    "reasons": [],
+  },
+  {
+    "id": "",
+    "reasons": [],
+  },
+]
+`;
