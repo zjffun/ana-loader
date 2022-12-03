@@ -1,16 +1,12 @@
 {
   "name": "dep-loader",
   "version": "0.1.0",
-  "description": "",
+  "description": "A webpack loader for analyzing dependencies. Support TypeScript, JSX, Vue, AMD, CJS, ESM, CSS, Sass, Scss, Less and Stylus.",
   "license": "MIT",
   "repository": "zjffun/dep-loader",
-  "author": "Jufeng Zhang",
+  "author": "zjffun",
   "homepage": "https://github.com/zjffun/dep-loader",
   "bugs": "https://github.com/zjffun/dep-loader/issues",
-  "funding": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/webpack"
-  },
   "main": "./dist/index.js",
   "engines": {
     "node": ">= 10.13.0"
