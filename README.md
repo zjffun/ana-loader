@@ -9,16 +9,16 @@
 [![chat][chat]][chat-url]
 [![size][size]][size-url]
 
-# dep-loader
+# ana-loader
 
 A webpack loader for analyzing dependencies. Support TypeScript, JSX, Vue, AMD, CJS, ESM, CSS, Sass, Scss, Less and Stylus.
 
 ## Getting Started
 
-To begin, you'll need to install `dep-loader`:
+To begin, you'll need to install `ana-loader`:
 
 ```console
-$ npm install dep-loader --save-dev
+$ npm install ana-loader --save-dev
 ```
 
 Then add the loader to your `webpack` config. For example:
@@ -40,7 +40,7 @@ const config = {
   module: {
     rules: [
       {
-        loader: require.resolve('dep-loader'),
+        loader: require.resolve('ana-loader'),
       },
     ],
   },
@@ -92,7 +92,7 @@ module.exports = {
   module: {
     rules: [
       {
-        loader: `dep-loader`,
+        loader: `ana-loader`,
         options: {
           excludes: [/node_modules/, /test/],
         },
@@ -159,7 +159,7 @@ const config = {
   module: {
     rules: [
       {
-        loader: require.resolve('dep-loader'),
+        loader: require.resolve('ana-loader'),
       },
     ],
   },
@@ -197,15 +197,15 @@ compiler.run((error, stats) => {
 
 [MIT](./LICENSE)
 
-[npm]: https://img.shields.io/npm/v/dep-loader.svg
-[npm-url]: https://npmjs.com/package/dep-loader
-[node]: https://img.shields.io/node/v/dep-loader.svg
+[npm]: https://img.shields.io/npm/v/ana-loader.svg
+[npm-url]: https://npmjs.com/package/ana-loader
+[node]: https://img.shields.io/node/v/ana-loader.svg
 [node-url]: https://nodejs.org
-[deps]: https://david-dm.org/zjffun/dep-loader.svg
-[deps-url]: https://david-dm.org/zjffun/dep-loader
-[cover]: https://codecov.io/gh/zjffun/dep-loader/branch/master/graph/badge.svg
-[cover-url]: https://codecov.io/gh/zjffun/dep-loader
+[deps]: https://david-dm.org/zjffun/ana-loader.svg
+[deps-url]: https://david-dm.org/zjffun/ana-loader
+[cover]: https://codecov.io/gh/zjffun/ana-loader/branch/master/graph/badge.svg
+[cover-url]: https://codecov.io/gh/zjffun/ana-loader
 [chat]: https://img.shields.io/badge/gitter-webpack%2Fwebpack-brightgreen.svg
 [chat-url]: https://gitter.im/webpack/webpack
-[size]: https://packagephobia.now.sh/badge?p=dep-loader
-[size-url]: https://packagephobia.now.sh/result?p=dep-loader
+[size]: https://packagephobia.now.sh/badge?p=ana-loader
+[size-url]: https://packagephobia.now.sh/result?p=ana-loader

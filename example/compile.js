@@ -12,7 +12,7 @@ const config = {
   module: {
     rules: [
       {
-        loader: require.resolve('dep-loader'),
+        loader: require.resolve('ana-loader'),
       },
     ],
   },

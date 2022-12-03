@@ -1,12 +1,12 @@
 {
-  "name": "dep-loader",
+  "name": "ana-loader",
   "version": "0.1.0",
   "description": "A webpack loader for analyzing dependencies. Support TypeScript, JSX, Vue, AMD, CJS, ESM, CSS, Sass, Scss, Less and Stylus.",
   "license": "MIT",
-  "repository": "zjffun/dep-loader",
+  "repository": "zjffun/ana-loader",
   "author": "zjffun",
-  "homepage": "https://github.com/zjffun/dep-loader",
-  "bugs": "https://github.com/zjffun/dep-loader/issues",
+  "homepage": "https://github.com/zjffun/ana-loader",
+  "bugs": "https://github.com/zjffun/ana-loader/issues",
   "main": "./dist/index.js",
   "engines": {
     "node": ">= 10.13.0"

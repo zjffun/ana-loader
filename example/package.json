@@ -8,7 +8,7 @@
     "start": "node ./compile.js"
   },
   "dependencies": {
-    "dep-loader": "../",
+    "ana-loader": "../",
     "webpack": "^5.75.0"
   }
 }
