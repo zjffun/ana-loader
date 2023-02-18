@@ -99,6 +99,7 @@ exports[`"excludes" option should work with string array: result 1`] = `
       "./foo.vue",
       "./foo.vue",
       "./foo.vue",
+      "./foo.vue",
     ],
   },
   {

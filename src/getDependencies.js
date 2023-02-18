@@ -1,12 +1,13 @@
 import detectiveAmd from 'detective-amd';
 import detectiveCjs from 'detective-cjs';
-import detectiveTs from 'detective-typescript';
 import detectiveEs6 from 'detective-es6';
+import detectiveHtml from 'detective-html';
+import detectiveLess from 'detective-less';
+import detectivePostcss from 'detective-postcss';
 import detectiveSass from 'detective-sass';
 import detectiveScss from 'detective-scss';
-import detectiveLess from 'detective-less';
 import detectiveStylus from 'detective-stylus';
-import detectivePostcss from 'detective-postcss';
+import detectiveTs from 'detective-typescript';
 
 const scriptType = ['.js', '.ts', '.tsx', '.jsx'];
 
@@ -24,14 +25,11 @@ export default function getDependencies(sourceStr, ext) {
       detectiveCjs(sourceStr).forEach((dep) => depSet.add(dep));
       detectiveEs6(sourceStr).forEach((dep) => depSet.add(dep));
     } else if (ext === '.sass') {
-      // TODO: url
-      detectiveSass(sourceStr).forEach((dep) => depSet.add(dep));
+      detectiveSass(sourceStr, { url: true }).forEach((dep) => depSet.add(dep));
     } else if (ext === '.scss') {
-      // TODO: url
-      detectiveScss(sourceStr).forEach((dep) => depSet.add(dep));
+      detectiveScss(sourceStr, { url: true }).forEach((dep) => depSet.add(dep));
     } else if (ext === '.less') {
-      // TODO: url
-      detectiveLess(sourceStr).forEach((dep) => depSet.add(dep));
+      detectiveLess(sourceStr, { url: true }).forEach((dep) => depSet.add(dep));
     } else if (ext === '.styl') {
       // TODO: url
       detectiveStylus(sourceStr).forEach((dep) => depSet.add(dep));
@@ -40,7 +38,7 @@ export default function getDependencies(sourceStr, ext) {
         depSet.add(dep)
       );
     } else if (ext === '.html') {
-      // TODO: html
+      detectiveHtml(sourceStr).forEach((dep) => depSet.add(dep));
     }
   } catch (error) {
     // eslint-disable-next-line no-console
