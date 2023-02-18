@@ -39,6 +39,30 @@ exports[`"excludes" option should work with string array: result 1`] = `
     ],
   },
   {
+    "id": "./foo.scss",
+    "reasons": [
+      "./simple.js",
+    ],
+  },
+  {
+    "id": "./foo.less",
+    "reasons": [
+      "./simple.js",
+    ],
+  },
+  {
+    "id": "./dynamic-import.js",
+    "reasons": [
+      "./simple.js",
+    ],
+  },
+  {
+    "id": "./commonjs.js",
+    "reasons": [
+      "./simple.js",
+    ],
+  },
+  {
     "id": "./node_modules/test.js",
     "reasons": [
       "./foo.js",
@@ -55,9 +79,25 @@ exports[`"excludes" option should work with string array: result 1`] = `
     ],
   },
   {
+    "id": "./assets/test-font.woff",
+    "reasons": [
+      "./foo.css",
+    ],
+  },
+  {
+    "id": "./assets/test-font.ttf",
+    "reasons": [
+      "./foo.css",
+    ],
+  },
+  {
     "id": "./assets/foo.png",
     "reasons": [
       "./foo.css",
+      "./foo.less",
+      "./foo.scss",
+      "./foo.vue",
+      "./foo.vue",
       "./foo.vue",
     ],
   },

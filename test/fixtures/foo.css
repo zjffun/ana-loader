@@ -1,3 +1,19 @@
+@charset "UTF-8";
+
+
+@font-face {
+  font-family: test-font;
+  src: url("./assets/test-font.woff") format("woff"), url("./assets/test-font.ttf") format("truetype");
+}
+
+/*
+can't detect, need postcss-values-parser fix
+@font-face {
+  font-family: test-font2;
+  src: url(./assets/test-font2.woff) format("woff");
+}
+*/
+
 .test {
   background: url("./assets/foo.png");
 }

@@ -24,17 +24,23 @@ export default function getDependencies(sourceStr, ext) {
       detectiveCjs(sourceStr).forEach((dep) => depSet.add(dep));
       detectiveEs6(sourceStr).forEach((dep) => depSet.add(dep));
     } else if (ext === '.sass') {
+      // TODO: url
       detectiveSass(sourceStr).forEach((dep) => depSet.add(dep));
     } else if (ext === '.scss') {
+      // TODO: url
       detectiveScss(sourceStr).forEach((dep) => depSet.add(dep));
     } else if (ext === '.less') {
+      // TODO: url
       detectiveLess(sourceStr).forEach((dep) => depSet.add(dep));
     } else if (ext === '.styl') {
+      // TODO: url
       detectiveStylus(sourceStr).forEach((dep) => depSet.add(dep));
     } else if (ext === '.css') {
       detectivePostcss(sourceStr, { url: true }).forEach((dep) =>
         depSet.add(dep)
       );
+    } else if (ext === '.html') {
+      // TODO: html
     }
   } catch (error) {
     // eslint-disable-next-line no-console
