@@ -1,6 +1,6 @@
 {
   "name": "ana-loader",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A webpack loader for analyzing dependencies. Support TypeScript, JSX, Vue, AMD, CJS, ESM, CSS, Sass, Scss, Less and Stylus.",
   "license": "MIT",
   "repository": "zjffun/ana-loader",
