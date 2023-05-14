@@ -13,7 +13,7 @@
   },
   "scripts": {
     "start": "npm run build -- -w",
-    "clean": "del-cli dist",
+    "clean": "del-cli dist example/dist",
     "prebuild": "npm run clean",
     "build": "cross-env NODE_ENV=production babel src -d dist --copy-files",
     "commitlint": "commitlint --from=master",
