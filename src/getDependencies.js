@@ -2,7 +2,7 @@ import detectiveAmd from 'detective-amd';
 import detectiveCjs from 'detective-cjs';
 import detectiveEs6 from 'detective-es6';
 import detectiveHtml from 'detective-html';
-import detectiveLess from 'detective-less';
+import detectiveLess from '@dependents/detective-less';
 import detectivePostcss from 'detective-postcss';
 import detectiveSass from 'detective-sass';
 import detectiveScss from 'detective-scss';

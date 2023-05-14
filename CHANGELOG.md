@@ -1,3 +1,7 @@
+# v0.2.1
+
+Using official `@dependents/detective-less`, `detective-sass` and `detective-scss`.
+
 # v0.2.0
 
 Add features analyzing dependencies of HTML and `url()`.
