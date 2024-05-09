@@ -1,3 +1,11 @@
+# v0.2.3
+
+Using quick-dep.
+
+# v0.2.2
+
+Fix dependencies.
+
 # v0.2.1
 
 Using official `@dependents/detective-less`, `detective-sass` and `detective-scss`.
