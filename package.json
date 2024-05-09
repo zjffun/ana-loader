@@ -39,18 +39,7 @@
     "webpack": "^4.0.0 || ^5.0.0"
   },
   "dependencies": {
-    "@dependents/detective-less": "^5.0.0",
-    "detective-amd": "^6.0.0",
-    "detective-cjs": "^6.0.0",
-    "detective-es6": "^5.0.0",
-    "detective-html": "^0.1.0",
-    "detective-postcss": "^7.0.0",
-    "detective-sass": "^6.0.0",
-    "detective-scss": "^5.0.0",
-    "detective-stylus": "^5.0.0",
-    "detective-typescript": "^13.0.0",
-    "detective-vue2": "^2.0.1",
-    "vue-template-compiler": "^2.7.14"
+    "quick-dep": "^0.0.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.19.3",

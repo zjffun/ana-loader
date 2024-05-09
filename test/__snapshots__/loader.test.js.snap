@@ -13,6 +13,12 @@ exports[`loader should work: result 1`] = `
     ],
   },
   {
+    "id": "./dynamic-import.js",
+    "reasons": [
+      "./simple.js",
+    ],
+  },
+  {
     "id": "./commonjs.js",
     "reasons": [
       "./simple.js",
@@ -61,12 +67,6 @@ exports[`loader should work: result 1`] = `
     ],
   },
   {
-    "id": "./dynamic-import.js",
-    "reasons": [
-      "./simple.js",
-    ],
-  },
-  {
     "id": "./node_modules/test.js",
     "reasons": [
       "./foo.js",
@@ -103,6 +103,12 @@ exports[`loader should work: result 1`] = `
       "./foo.less",
       "./foo.scss",
       "./foo.vue",
+    ],
+  },
+  {
+    "id": "./assets/test-font2.woff",
+    "reasons": [
+      "./foo.css",
     ],
   },
   {

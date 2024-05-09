@@ -8,6 +8,11 @@ import "./node_modules/test.js";
 import "./fooDep.js";
 </script>
 
+<script lang="ts">
+import "./node_modules/test.js";
+import "./fooDep.js";
+</script>
+
 <style>
 .test {
   background: url("./assets/foo1.png");
