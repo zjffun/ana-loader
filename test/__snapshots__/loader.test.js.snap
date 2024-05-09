@@ -13,6 +13,12 @@ exports[`loader should work: result 1`] = `
     ],
   },
   {
+    "id": "./commonjs.js",
+    "reasons": [
+      "./simple.js",
+    ],
+  },
+  {
     "id": "./foo.js",
     "reasons": [
       "./simple.js",
@@ -61,12 +67,6 @@ exports[`loader should work: result 1`] = `
     ],
   },
   {
-    "id": "./commonjs.js",
-    "reasons": [
-      "./simple.js",
-    ],
-  },
-  {
     "id": "./node_modules/test.js",
     "reasons": [
       "./foo.js",
@@ -103,8 +103,23 @@ exports[`loader should work: result 1`] = `
       "./foo.less",
       "./foo.scss",
       "./foo.vue",
+    ],
+  },
+  {
+    "id": "./assets/foo1.png",
+    "reasons": [
       "./foo.vue",
+    ],
+  },
+  {
+    "id": "./assets/foo2.png",
+    "reasons": [
       "./foo.vue",
+    ],
+  },
+  {
+    "id": "./assets/foo3.png",
+    "reasons": [
       "./foo.vue",
     ],
   },

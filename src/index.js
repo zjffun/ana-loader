@@ -1,7 +1,5 @@
 import path from 'path';
 
-import { parseComponent } from 'vue-template-compiler';
-
 import getDependencies from './getDependencies';
 
 import schema from './options.json';
@@ -33,45 +31,7 @@ export default function loader(source) {
   const ext = path.extname(resourcePath);
   const sourceStr = source.toString();
 
-  let deps = [];
-  if (ext === '.vue') {
-    const component = parseComponent(sourceStr);
-
-    if (component.script) {
-      deps = deps.concat(
-        getDependencies(
-          component.script.content,
-          `.${component.script.lang || 'js'}`
-        )
-      );
-    }
-
-    if (component.scriptSetup) {
-      deps = deps.concat(
-        getDependencies(
-          component.scriptSetup.content,
-          `.${component.scriptSetup.lang || 'js'}`
-        )
-      );
-    }
-
-    for (const style of component.styles) {
-      deps = deps.concat(
-        getDependencies(style.content, `.${style.lang || 'css'}`)
-      );
-    }
-
-    if (component.template) {
-      deps = deps.concat(
-        getDependencies(
-          component.template.content,
-          `.${component.template.lang || 'html'}`
-        )
-      );
-    }
-  } else {
-    deps = getDependencies(sourceStr, ext);
-  }
+  const deps = getDependencies(sourceStr, ext);
 
   const newSource = deps.map((dep) => `import '${dep}';`).join('\n');
 

@@ -10,19 +10,19 @@ import "./fooDep.js";
 
 <style>
 .test {
-  background: url("./assets/foo.png");
+  background: url("./assets/foo1.png");
 }
 </style>
 
 <style lang="scss">
 .test {
-  background: url("./assets/foo.png");
+  background: url("./assets/foo2.png");
 }
 </style>
 
 <style lang="less">
 .test {
-  background: url("./assets/foo.png");
+  background: url("./assets/foo3.png");
 }
 </style>
 

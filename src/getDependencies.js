@@ -8,8 +8,9 @@ import detectiveSass from 'detective-sass';
 import detectiveScss from 'detective-scss';
 import detectiveStylus from 'detective-stylus';
 import detectiveTs from 'detective-typescript';
+import detectiveVue from './detectiveVue.js';
 
-const scriptType = ['.js', '.ts', '.tsx', '.jsx'];
+const tsxType = ['.ts', '.tsx'];
 
 export const raw = true;
 
@@ -17,10 +18,17 @@ export default function getDependencies(sourceStr, ext) {
   const depSet = new Set();
 
   try {
-    if (scriptType.includes(ext)) {
+    if (tsxType.includes(ext)) {
       detectiveTs(sourceStr, {
         jsx: true,
       }).forEach((dep) => depSet.add(dep));
+    } else if (ext === '.vue') {
+      detectiveVue(sourceStr).forEach((dep) => depSet.add(dep));
+    } else if (ext === '.jsx') {
+      detectiveAmd(sourceStr).forEach((dep) => depSet.add(dep));
+      detectiveCjs(sourceStr).forEach((dep) => depSet.add(dep));
+      detectiveEs6(sourceStr).forEach((dep) => depSet.add(dep));
+    } else if (ext === '.js') {
       detectiveAmd(sourceStr).forEach((dep) => depSet.add(dep));
       detectiveCjs(sourceStr).forEach((dep) => depSet.add(dep));
       detectiveEs6(sourceStr).forEach((dep) => depSet.add(dep));
